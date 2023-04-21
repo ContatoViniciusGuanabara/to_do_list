@@ -12,6 +12,46 @@
 
 <body>
     
+    <div class="container my-5">
+        <div class="row mb-4">
+            <div class="col">
+                <h1>Lista de Tarefas</h1>
+            </div>
+            <div class="col text-end">
+                <div class="d-flex justify-content-end">
+                    <select id="select_filter" class="form-select me-3 w-50">
+                        <option value=""></option>
+                        <option value="1">filtro 1</option>
+                    </select> 
+                    <a href="new_task.html" class="btn btn-pimary"><i class="fa-solid fa-plus me-2"></i>Nova tarefa</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-none" id="no_tasks">
+            <div class="col text-center">
+                <div class="span opacity-75">Não exitem tarefas para apresentar.</div>
+            </div>
+        </div>
+
+    </div>
+     
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+<!--
+    
+    - ver tarefas
+        titulo
+        filtro para escolher quais tarefas que queremos ver (select)
+        botão para adicionar tarefas
+        (mensagem sobre o fato de não existir tarefas)
+        caixa para tarefas
+            - possibilidade de alterar o status da tarefa,
+            - editar tarefa,
+            - eliminar tarefa
+        parágrafo com o total de tarefas disponíveis (de acordo com o filtro)
+
+-->
